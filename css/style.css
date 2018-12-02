@@ -1,1 +1,50 @@
+body
+{
+    background-color: mediumvioletred;
+    background: #ff6a00 url(images/ploo.jpg) repeat-x;
+}
 
+#wrap 
+{
+    width: 700px;
+    margin: 0px auto 15px auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #4cff00;
+}
+
+/* Header */
+#header 
+{
+    height: 242px;
+    margin: 0px auto 15px auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #0094ff;
+}
+
+/*Header Menu*/
+#topmenu
+{
+    display: block;
+    list-style: none;
+    padding:0 0px 0px 278px;
+    float: right;
+    width: 415px;
+}
+
+#topmenu li
+{
+    display: inline;
+}
+
+#topmenu a
+{
+    display: block;
+    float: left;
+    height: 28px;
+    list-style: none;
+    padding: 0 0px 0px 278px;
+    
+    width: 415px;
+    text-align: center;
+}
