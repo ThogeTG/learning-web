@@ -1,19 +1,56 @@
-body
-{
-    background-color: mediumvioletred;
-    /*background: #ff6a00 url(images/ploo.jpg) repeat-x;*/
+body {
+    /*background-color: mediumvioletred;*/
+    background: #ff6a00 url("https://github.com/ThogeTG/learning-web/blob/master/images/header.png?raw=true") repeat-x;
 }
 
-#wrap 
-{
-    width: 700px;
+#wrap {
+    width: 1920px;
     margin: 0 auto 15px auto;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #4cff00;
 }
 
+#topmenu {
+    height: 40px;
+    list-style: none;
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+    #topmenu li {
+        display: inline;
+    }
+
+    #topmenu a {
+        display: block;
+        float: left;
+        margin: 0px 0px 0px 0px;
+        text-decoration: none;
+        padding: 0px 15px 0px 15px;
+        text-align: center;
+    }
+
+        #topmenu a:hover {
+            color: #ffffff;
+            background-color: #B52E10;
+        }
+
+#header {
+    display: block;
+    list-style: none;
+    padding: 0 0px 0px 278px;
+    float: right;
+    width: 415px;
+    background-color: black;
+    position: fixed;
+}
+
 /* Header */
+/*
 #header 
 {
     height: 242px;
@@ -26,7 +63,7 @@ body
     height: 78px;
 }
 
-/*Header Menu*/
+/*Header Menu*
 #topmenu
 {
     display: block;
@@ -63,4 +100,29 @@ h1, h2, h3
     color: #0094ff;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif
+}
+
+/* Style the header */
+
+#article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+#section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+#footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
 }
