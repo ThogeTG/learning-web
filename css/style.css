@@ -1,13 +1,13 @@
 body
 {
     background-color: mediumvioletred;
-    background: #ff6a00 url(images/ploo.jpg) repeat-x;
+    /*background: #ff6a00 url(images/ploo.jpg) repeat-x;*/
 }
 
 #wrap 
 {
     width: 700px;
-    margin: 0px auto 15px auto;
+    margin: 0 auto 15px auto;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #4cff00;
@@ -17,9 +17,13 @@ body
 #header 
 {
     height: 242px;
-    margin: 0px auto 15px auto;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    color: #0094ff;
+    background: url(images/header.png) no-repeat left top;
+    clear: both;
+}
+
+#topbar 
+{
+    height: 78px;
 }
 
 /*Header Menu*/
@@ -27,7 +31,7 @@ body
 {
     display: block;
     list-style: none;
-    padding:0 0px 0px 278px;
+    padding: 0 0 0 278px;
     float: right;
     width: 415px;
 }
@@ -42,9 +46,21 @@ body
     display: block;
     float: left;
     height: 28px;
-    list-style: none;
-    padding: 0 0px 0px 278px;
-    
-    width: 415px;
+    margin: 0 0 0 0;
+    text-decoration: none;
+    padding: 9px 15px 0px 15px;
     text-align: center;
+}
+
+#topmenu a:hover
+{
+    color: #b200ff;
+    background-color: #808080;
+}
+
+h1, h2, h3
+{
+    color: #0094ff;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
 }
