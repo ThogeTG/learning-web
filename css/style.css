@@ -4,31 +4,37 @@ body {
 }
 
 #wrap {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto 15px auto;
+    text-align: center;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #4cff00;
 }
 
 #topmenu {
-    height: 40px;
+    height: 20px;
+    width: 100%;
+    float: left;
     list-style: none;
+    margin: auto;
     background-color: black;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    font-size: 35px;
+    font-size: 20px;
     color: white;
 }
 
-    #topmenu li {
+    #topmenu li 
+    {
         display: inline;
     }
 
     #topmenu a {
         display: block;
         float: left;
-        margin: 0px 0px 0px 0px;
+        width: 20%;
+        margin: auto;
         text-decoration: none;
         padding: 0px 15px 0px 15px;
         text-align: center;
@@ -49,13 +55,46 @@ body {
     position: fixed;
 }
 
-h1, h2, h3 {
-    color: #0094ff;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif
+#mainpage 
+{
+    width: 700px;
+    float: left;
+    padding: 5px 5px 5px 0px;
+    height: auto
 }
 
-table, th, td
+    #mainpage h1 {
+        font-size: 24px;
+    }
+
+    #mainpage h2 {
+        font-size: 18px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #B52E10;
+    }
+
+    #mainpage h3 {
+        font-size: 20px;
+    }
+
+    #mainpage h4 {
+        font-size: 18px;
+    }
+
+    #mainpage h5 {
+        font-size: 16px;
+    }
+
+h1, h2, h3 
+{
+    color: #0094ff;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+table, tr, th, td
 {
     border: 1px solid #ff0000;
     border-collapse: collapse;
@@ -70,21 +109,6 @@ table, th, td
     height: 242px;
     background: url(images/header.png) no-repeat left top;
     clear: both;
-}
-
-#topbar 
-{
-    height: 78px;
-}
-
-/*Header Menu*
-#topmenu
-{
-    display: block;
-    list-style: none;
-    padding: 0 0 0 278px;
-    float: right;
-    width: 415px;
 }
 
 #topmenu li
@@ -130,6 +154,30 @@ table, th, td
 #footer {
     background-color: #777;
     padding: 10px;
-    text-align: center;
+    text-align: right;
     color: white;
 }
+
+/*Content*/
+#content {
+    background-color: #FFFFFF;
+}
+
+
+
+    #mainpage p {
+        line-height: 22px;
+        margin: 10px 0px 22px 0px;
+        text-align: justify;
+    }
+
+    #mainpage blockquote {
+        background: #efefef;
+        display: block;
+        margin: 5px;
+        font: Georgia, "Times New Roman", Times, serif;
+        font-style: italic;
+    }
+
+
+
