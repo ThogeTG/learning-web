@@ -1,6 +1,6 @@
-body {
-    /*background-color: mediumvioletred;*/
-    background: #ff6a00 url("https://github.com/ThogeTG/learning-web/blob/master/images/header.jpg?raw=true") repeat-x;
+body 
+{
+    background: #000000 url("https://github.com/ThogeTG/learning-web/blob/master/images/header.jpg?raw=true") repeat-x;
 }
 
 #wrap {
@@ -42,7 +42,7 @@ body {
 
         #topmenu a:hover {
             color: #ffffff;
-            background-color: #B52E10;
+            background-color: #b200ff;
         }
 
 #header {
@@ -59,13 +59,13 @@ body {
 {
     width: 700px;
     float: left;
-    padding: 5px 5px 5px 0px;
+    padding: 1% 5% 1% 5%;
     height: auto
 }
 
 h1, h2, h3 
 {
-    color: #0094ff;
+    color: #4800ff;
     font-weight: normal;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -73,7 +73,7 @@ h1, h2, h3
 
 table, tr, th, td 
 {
-    border: 1px solid #ff0000;
+    border: 2px solid #1c0c62;
     border-collapse: collapse;
     padding: 15px;
     text-align: center;
@@ -90,16 +90,11 @@ input
     display: table-cell;
 }
 
-canvas
-{
-    border:#666 1px solid;
-}
-
 #div1 {
     width: 100px;
     height: 70px;
     padding: 10px;
-    border: 1px solid #aaaaaa;
+    border: 2px solid #000000;
     display: block;
 }
 
