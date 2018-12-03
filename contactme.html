@@ -6,7 +6,69 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div id="wrap">
+        <ul id="topmenu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">Memes</a></li>
+            <li><a href="contactme.html">Contact me</a></li>
+            <li><a href="https://github.com/ThogeTG/learning-web">Repository</a></li>
+        </ul>
 
+        <table style="width: 40%">
+            <tr>
+                <th colspan="2">My contact information</th>
+            </tr>
+            <tr>
+                <td rowspan="2"> Name </td>
+                <td> Touko </td>
+            </tr>
+            <tr>
+                <td> Niininen </td>
+            </tr>
+            <tr>
+                <td> Telephone </td>
+                <td> 0123456789 </td>
+            </tr>
+            <tr>
+                <td> E-mail </td>
+                <td> toukoniininen@kamk.fi </td>
+            </tr>
+        </table>
+
+        <form span style="padding-top:40px">
+            <table>
+                <tr>
+                    <td align="right">First Name:</td>
+                    <td align="left"><input type="text" name="first" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Last Name:</td>
+                    <td align="left"><input type="text" name="last" /></td>
+                </tr>
+                <tr>
+                    <td align="left">Male</td>
+                    <td align="right"><input type="radio" name="gender" value="male" checked /></td>
+                </tr>
+                <tr>
+                    <td align="left">Female</td>
+                    <td align="right"><input type="radio" name="gender" value="female" /></td>
+                </tr>
+                <tr>
+                    <td align="left">Other</td>
+                    <td align="right"><input type="radio" name="gender" value="other" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Email:</td>
+                    <td align="left"><input type="text" name="email" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Submit:</td>
+                    <td align="left"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
 
 </body>
 </html>

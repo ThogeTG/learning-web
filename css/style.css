@@ -94,12 +94,23 @@ h1, h2, h3
     text-align: center;
 }
 
-table, tr, th, td
-{
+table, tr, th, td {
+    
     border: 1px solid #ff0000;
     border-collapse: collapse;
     padding: 15px;
     text-align: center;
+    margin: auto;
+}
+
+form
+{
+    
+}
+
+input 
+{
+    display: table-cell;
 }
 
 /* Header */
