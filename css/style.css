@@ -59,6 +59,8 @@ table, th, td
 {
     border: 1px solid #ff0000;
     border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
 }
 
 /* Header */
