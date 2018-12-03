@@ -9,7 +9,6 @@ body {
     text-align: center;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: #4cff00;
 }
 
 #topmenu {
@@ -86,6 +85,11 @@ body {
         font-size: 16px;
     }
 
+    #mainpage p {
+        font-size: 16px;
+        color: #0094ff;
+    }
+
 h1, h2, h3 
 {
     color: #0094ff;
@@ -94,8 +98,8 @@ h1, h2, h3
     text-align: center;
 }
 
-table, tr, th, td {
-    
+table, tr, th, td 
+{
     border: 1px solid #ff0000;
     border-collapse: collapse;
     padding: 15px;
@@ -146,14 +150,6 @@ input
 
 /* Style the header */
 
-#article {
-    float: left;
-    padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
-}
-
 /* Clear floats after the columns */
 #section:after {
     content: "";
@@ -166,7 +162,12 @@ input
     background-color: #777;
     padding: 10px;
     text-align: right;
-    color: white;
+    color: #FFFFFF;
+    margin: 0 auto;
+    background: #333333;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    clear: both;
 }
 
 /*Content*/

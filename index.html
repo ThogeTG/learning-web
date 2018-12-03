@@ -4,6 +4,40 @@
 <head>
     <title> Hello everyone! 2018 </title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script>
+        function showLocation()
+        {
+            if (navigator.geolocation)
+            {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else
+            {
+                alert('Your browser does not support geolocation');
+            }
+        }
+
+        function showPosition(position)
+        {
+            alert("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
+        }
+
+        function validateForm() {
+            if (document.forms["myForm"]["name"].value == null || document.forms["myForm"]["name"].value == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            if (document.forms["myForm"]["phone"].value == null || document.forms["myForm"]["phone"].value == "") {
+                alert("Phone must be filled out");
+                return false;
+            }
+            if (document.forms["myForm"]["email"].value == null || document.forms["myForm"]["email"].value == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </head>
 <body>
     <div id="wrap">
@@ -14,10 +48,10 @@
                 <li><a href="#">Memes</a></li>
                 <li><a href="contactme.html">Contact me</a></li>
                 <li><a href="https://github.com/ThogeTG/learning-web">Repository</a></li>
+                <li><button onclick="showLocation()"></button>Click</li>
             </ul>
 
         </div>
-
 
         <img src="images/meme.jpg" alt="meme picture">
 
@@ -26,19 +60,26 @@
             <h1>MY LIFE AS MEME PICTURES</h1>
 
             <h2>  </h2>
-            
-            <h3> Ploo </h3>
-            
+
+            <h3>Meme's are funny and I like funny things</h3>
+
             <p>
                 <ol>
                     <li>My life is like meme pictures.</li>
-                    <li>Plououououou</li>
+                    <li>You either are gonna love or hate it.</li>
+                    <li>I should someday make a real portfolio. And not be silly with these memes.</li>
                 </ol>
+
+                <ul>
+                    <li>My life is like meme pictures.</li>
+                    <li>You either are gonna love or hate it.</li>
+                    <li>I should someday make a real portfolio. And not be silly with these memes.</li>
+                </ul>
                 This is my first paragraph. Write here efegeg.
             </p>
 
             <a href="" target="_blank">This is a link to this web page's reposity.</a> <br>
-            <img src="" alt="mem picture"> <br>
+            <img src="#" alt="meme picture"><br>
 
 
             <table style="width: 50%">
@@ -58,8 +99,10 @@
                 <input type="radio" name="gender" value="female"> Female <br>
                 <input type="radio" name="gender" value="other"> Other <br>
                 E-mail:<input type="email" name="email"> <br>
-
             </form>
+            <p></p>
+            <h2>Youtube video</h2>
+            <iframe width="460" height="215" src="https://www.youtube.com/embed/N1ZgIkJ0bvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
         </div>
         <div id="footer">
             Page created by Touko Niininen 30.11.2018
