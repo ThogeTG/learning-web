@@ -1,6 +1,6 @@
 body {
     /*background-color: mediumvioletred;*/
-    background: #ff6a00 url("https://github.com/ThogeTG/learning-web/blob/master/images/header.png?raw=true") repeat-x;
+    background: #ff6a00 url("https://github.com/ThogeTG/learning-web/blob/master/images/header.jpg?raw=true") repeat-x;
 }
 
 #wrap {
@@ -9,7 +9,7 @@ body {
     text-align: center;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    color: #0094ff;
+    color: white;
 }
 
 #topmenu {
@@ -63,34 +63,6 @@ body {
     height: auto
 }
 
-    #mainpage h1 {
-        font-size: 24px;
-    }
-
-    #mainpage h2 {
-        font-size: 18px;
-        padding-top: 20px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #B52E10;
-    }
-
-    #mainpage h3 {
-        font-size: 20px;
-    }
-
-    #mainpage h4 {
-        font-size: 18px;
-    }
-
-    #mainpage h5 {
-        font-size: 16px;
-    }
-
-    #mainpage p {
-        font-size: 16px;
-        color: #0094ff;
-    }
-
 h1, h2, h3 
 {
     color: #0094ff;
@@ -124,50 +96,11 @@ canvas
 }
 
 #div1 {
-    width: 350px;
+    width: 100px;
     height: 70px;
     padding: 10px;
     border: 1px solid #aaaaaa;
-}
-
-/* Header */
-/*
-#header 
-{
-    height: 242px;
-    background: url(images/header.png) no-repeat left top;
-    clear: both;
-}
-
-#topmenu li
-{
-    display: inline;
-}
-
-#topmenu a
-{
     display: block;
-    float: left;
-    height: 28px;
-    margin: 0 0 0 0;
-    text-decoration: none;
-    padding: 9px 15px 0px 15px;
-    text-align: center;
-}
-
-#topmenu a:hover
-{
-    color: #b200ff;
-    background-color: #808080;
-}
-
-/* Style the header */
-
-/* Clear floats after the columns */
-#section:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /* Style the footer */
@@ -182,27 +115,3 @@ canvas
     font-size: 11px;
     clear: both;
 }
-
-/*Content*/
-#content {
-    background-color: #FFFFFF;
-}
-
-
-
-    #mainpage p {
-        line-height: 22px;
-        margin: 10px 0px 22px 0px;
-        text-align: justify;
-    }
-
-    #mainpage blockquote {
-        background: #efefef;
-        display: block;
-        margin: 5px;
-        font: Georgia, "Times New Roman", Times, serif;
-        font-style: italic;
-    }
-
-
-
