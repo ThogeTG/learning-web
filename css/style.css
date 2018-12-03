@@ -9,6 +9,7 @@ body {
     text-align: center;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 14px;
+    color: #0094ff;
 }
 
 #topmenu {
@@ -115,6 +116,11 @@ form
 input 
 {
     display: table-cell;
+}
+
+canvas
+{
+    border:#666 1px solid;
 }
 
 /* Header */

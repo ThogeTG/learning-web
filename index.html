@@ -22,6 +22,19 @@
             alert("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
         }
 
+        function draw(x, y)
+        {
+            var canvas = document.getElementById('canvas');
+            var ctx = canvas.getContext('2d');
+            ctx.save();
+            ctx.clearRect(0, 0, 550, 400);
+            ctx.fillStyle = "rgba(0, 200, 0, 1)";
+            ctx.fillRect(x, 20, 50, 50);
+            ctx.restore();
+            x += 5;
+            var loopTimer = setTimeout('draw('+x+', '+y+')', 200);
+        }
+
         function validateForm() {
             if (document.forms["myForm"]["name"].value == null || document.forms["myForm"]["name"].value == "") {
                 alert("Name must be filled out");
@@ -92,22 +105,24 @@
                     <td> Last name </td>
                 </tr>
             </table>
-            <form>
-                First Name: <input type="text" name="fname"> <br>
-                Last Name: <input type="text" name="lname"><br>
-                Gender: <input type="radio" name="gender" value="male" checked> Male <br>
-                <input type="radio" name="gender" value="female"> Female <br>
-                <input type="radio" name="gender" value="other"> Other <br>
-                E-mail:<input type="email" name="email"> <br>
-            </form>
+            
             <p></p>
+            <h2>Here's some music.</h2>
+            <audio controls>
+                <source src="audio/audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
             <h2>Youtube video</h2>
             <iframe width="460" height="215" src="https://www.youtube.com/embed/N1ZgIkJ0bvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+
         </div>
         <div id="footer">
-            Page created by Touko Niininen 30.11.2018
+            Page created by Touko Niininen 11-12.2018
         </div>
         <h2 id="#"></h2>
     </div>
+    <button onclick="draw(0, 0)">Draw</button>
+    <canvas id="canvas" width="550" height="400"></canvas>
 </body>
 </html>
