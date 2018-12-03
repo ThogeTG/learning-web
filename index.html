@@ -5,25 +5,34 @@
     <title> Hello everyone! 2018 </title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script>
-        function showLocation()
-        {
-            if (navigator.geolocation)
-            {
+        function showLocation() {
+            if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
             }
-            else
-            {
+            else {
                 alert('Your browser does not support geolocation');
             }
         }
 
-        function showPosition(position)
-        {
+        function showPosition(position) {
             alert("Latitude: " + position.coords.latitude + "Longitude: " + position.coords.longitude);
         }
 
-        function draw(x, y)
-        {
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+        function draw(x, y) {
             var canvas = document.getElementById('canvas');
             var ctx = canvas.getContext('2d');
             ctx.save();
@@ -32,7 +41,7 @@
             ctx.fillRect(x, 20, 50, 50);
             ctx.restore();
             x += 5;
-            var loopTimer = setTimeout('draw('+x+', '+y+')', 200);
+            var loopTimer = setTimeout('draw(' + x + ', ' + y + ')', 200);
         }
 
         function validateForm() {
@@ -92,22 +101,10 @@
             </p>
 
             <a href="" target="_blank">This is a link to this web page's reposity.</a> <br>
-            <img src="#" alt="meme picture"><br>
 
+            <h2>Some happy music for the listeners ears</h2>
+            <p>Here's a christmas music I made for our new game called Santa's Calendar Gift Throw.</p>
 
-            <table style="width: 50%">
-                <tr>
-                    <th>Name</th>
-                    <th colspan="2">Telephone</th>
-                </tr>
-                <tr>
-                    <td> First name </td>
-                    <td> Last name </td>
-                </tr>
-            </table>
-            
-            <p></p>
-            <h2>Here's some music.</h2>
             <audio controls>
                 <source src="audio/audio.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
@@ -116,6 +113,14 @@
             <h2>Youtube video</h2>
             <iframe width="460" height="215" src="https://www.youtube.com/embed/N1ZgIkJ0bvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 
+            <h2>Drag&drop</h2>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> 1
+                <img id="drag1" src="images/dragdrop.png" draggable="true" ondragstart="drag(event)" width="50" height="50">
+            </div>
+            
+             <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"> 2 
+            
+             </div>
         </div>
         <div id="footer">
             Page created by Touko Niininen 11-12.2018
